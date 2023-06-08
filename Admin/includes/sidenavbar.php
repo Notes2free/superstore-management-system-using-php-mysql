@@ -1,6 +1,6 @@
 <nav class="sidebar">
     <div class="logo d-flex justify-content-between">
-        <a href="index.php">Super Store Management</a>
+        <a href="index.php"><img src="img/super-strore.png" alt="superstore"></a>
         <div class="sidebar_close_icon d-lg-none">
             <i class="ti-close"></i>
         </div>

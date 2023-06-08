@@ -4,6 +4,8 @@ if (isset($_SESSION['login_sales_user'])) {
 	header("location:  Admin/index.php"); // Redirecting To Profile Page
 } else if (isset($_SESSION['login_dist_user'])) {
 	header("location:  DistributorAdmin/index.php");
+} else if (isset($_SESSION['admin_login_user'])) {
+	header("location: MainAdmin/index.php");
 }
 ?>
 <!DOCTYPE html>
@@ -108,11 +110,10 @@ if (isset($_SESSION['login_sales_user'])) {
 									<h2>Admin Login Form</h2>
 
 									<div class="login-form-grids animated wow slideInUp" data-wow-delay=".5s">
-										<form>
-											<input type="text" placeholder="Admin ID" required=" ">
-											<input type="password" placeholder="Password" required=" ">
-
-											<input type="submit" value="Login">
+										<form action="" method="POST">
+											<input type="text" name="lsid" placeholder="Admin ID" required=" ">
+											<input type="password" name="lspass" placeholder="Password" required=" ">
+											<input type="submit" name="submitadmin" value="Login">
 										</form>
 									</div>
 

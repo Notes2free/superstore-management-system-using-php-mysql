@@ -4,6 +4,8 @@ if (isset($_SESSION['login_sales_user'])) {
 	header("location:  Admin/index.php"); // Redirecting To Profile Page
 } else if (isset($_SESSION['login_dist_user'])) {
 	header("location:  DistributorAdmin/index.php");
+} else if (isset($_SESSION['admin_login_user'])) {
+	header("location: MainAdmin/index.php");
 }
 ?>
 <!DOCTYPE html>
@@ -92,8 +94,7 @@ if (isset($_SESSION['login_sales_user'])) {
 												<figure>
 													<div class="snipcart-item block">
 														<div class="snipcart-thumb">
-															<a href="products.html"><img title=" " alt=" "
-																	src="images/1.png" /></a>
+															<a href="#"><img title=" " alt=" " src="images/1.png" /></a>
 															<p>Tata-salt</p>
 															<div class="stars">
 																<i class="fa fa-star blue-star" aria-hidden="true"></i>
@@ -141,8 +142,7 @@ if (isset($_SESSION['login_sales_user'])) {
 												<figure>
 													<div class="snipcart-item block">
 														<div class="snipcart-thumb">
-															<a href="products.html"><img title=" " alt=" "
-																	src="images/2.png" /></a>
+															<a href="#"><img title=" " alt=" " src="images/2.png" /></a>
 															<p>Fortune-sunflower</p>
 															<div class="stars">
 																<i class="fa fa-star blue-star" aria-hidden="true"></i>
@@ -190,7 +190,7 @@ if (isset($_SESSION['login_sales_user'])) {
 												<figure>
 													<div class="snipcart-item block">
 														<div class="snipcart-thumb">
-															<a href="products.html"><img src="images/3.png" alt=" "
+															<a href="#"><img src="images/3.png" alt=" "
 																	class="img-responsive" /></a>
 															<p>Aashirvaad-atta</p>
 															<div class="stars">
@@ -242,8 +242,7 @@ if (isset($_SESSION['login_sales_user'])) {
 												<figure>
 													<div class="snipcart-item block">
 														<div class="snipcart-thumb">
-															<a href="products.html"><img title=" " alt=" "
-																	src="images/4.png" /></a>
+															<a href="#"><img title=" " alt=" " src="images/4.png" /></a>
 															<p>Sampann-toor-dal</p>
 															<div class="stars">
 																<i class="fa fa-star blue-star" aria-hidden="true"></i>
@@ -291,8 +290,7 @@ if (isset($_SESSION['login_sales_user'])) {
 												<figure>
 													<div class="snipcart-item block">
 														<div class="snipcart-thumb">
-															<a href="products.html"><img title=" " alt=" "
-																	src="images/5.png" /></a>
+															<a href="#"><img title=" " alt=" " src="images/5.png" /></a>
 															<p>Parryss-sugar</p>
 															<div class="stars">
 																<i class="fa fa-star blue-star" aria-hidden="true"></i>
@@ -343,7 +341,7 @@ if (isset($_SESSION['login_sales_user'])) {
 												<figure>
 													<div class="snipcart-item block">
 														<div class="snipcart-thumb">
-															<a href="products.html"><img src="images/6.png" alt=" "
+															<a href="#"><img src="images/6.png" alt=" "
 																	class="img-responsive" /></a>
 															<p>Saffola-gold</p>
 															<div class="stars">
@@ -402,8 +400,7 @@ if (isset($_SESSION['login_sales_user'])) {
 												<figure>
 													<div class="snipcart-item block">
 														<div class="snipcart-thumb">
-															<a href="products.html"><img title=" " alt=" "
-																	src="images/7.png" /></a>
+															<a href="#"><img title=" " alt=" " src="images/7.png" /></a>
 															<p>Sona-masoori-rice</p>
 															<div class="stars">
 																<i class="fa fa-star blue-star" aria-hidden="true"></i>
@@ -451,8 +448,7 @@ if (isset($_SESSION['login_sales_user'])) {
 												<figure>
 													<div class="snipcart-item block">
 														<div class="snipcart-thumb">
-															<a href="products.html"><img title=" " alt=" "
-																	src="images/8.png" /></a>
+															<a href="#"><img title=" " alt=" " src="images/8.png" /></a>
 															<p>Milky-mist-paneer</p>
 															<div class="stars">
 																<i class="fa fa-star blue-star" aria-hidden="true"></i>
@@ -503,7 +499,7 @@ if (isset($_SESSION['login_sales_user'])) {
 												<figure>
 													<div class="snipcart-item block">
 														<div class="snipcart-thumb">
-															<a href="products.html"><img src="images/9.png" alt=" "
+															<a href="#"><img src="images/9.png" alt=" "
 																	class="img-responsive" /></a>
 															<p>Basmati-Rice</p>
 															<div class="stars">
@@ -555,7 +551,7 @@ if (isset($_SESSION['login_sales_user'])) {
 												<figure>
 													<div class="snipcart-item block">
 														<div class="snipcart-thumb">
-															<a href="products.html"><img title=" " alt=" "
+															<a href="#"><img title=" " alt=" "
 																	src="images/10.png" /></a>
 															<p>Fortune-sunflower</p>
 															<div class="stars">
@@ -604,7 +600,7 @@ if (isset($_SESSION['login_sales_user'])) {
 												<figure>
 													<div class="snipcart-item block">
 														<div class="snipcart-thumb">
-															<a href="products.html"><img title=" " alt=" "
+															<a href="#"><img title=" " alt=" "
 																	src="images/12.png" /></a>
 															<p>Nestle-a-slim</p>
 															<div class="stars">
@@ -653,7 +649,7 @@ if (isset($_SESSION['login_sales_user'])) {
 												<figure>
 													<div class="snipcart-item block">
 														<div class="snipcart-thumb">
-															<a href="products.html"><img src="images/13.png" alt=" "
+															<a href="#"><img src="images/13.png" alt=" "
 																	class="img-responsive" /></a>
 															<p>Bread-sandwich</p>
 															<div class="stars">
@@ -710,15 +706,15 @@ if (isset($_SESSION['login_sales_user'])) {
 		</ol>
 		<div class="carousel-inner" role="listbox">
 			<div class="item active">
-				<a href="beverages.html"> <img class="first-slide" src="images/b1.jpg" alt="First slide"></a>
+				<a href="#"> <img class="first-slide" src="images/b1.jpg" alt="First slide"></a>
 
 			</div>
 			<div class="item">
-				<a href="personalcare.html"> <img class="second-slide " src="images/b3.jpg" alt="Second slide"></a>
+				<a href="#"> <img class="second-slide " src="images/b3.jpg" alt="Second slide"></a>
 
 			</div>
 			<div class="item">
-				<a href="household.html"><img class="third-slide " src="images/b1.jpg" alt="Third slide"></a>
+				<a href="#"><img class="third-slide " src="images/b1.jpg" alt="Third slide"></a>
 
 			</div>
 		</div>
@@ -882,7 +878,7 @@ if (isset($_SESSION['login_sales_user'])) {
 								<figure>
 									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
-											<a href="products.html"><img title=" " alt=" " src="images/14.png"></a>
+											<a href="#"><img title=" " alt=" " src="images/14.png"></a>
 											<p>Fried-gram</p>
 											<div class="stars">
 												<i class="fa fa-star blue-star" aria-hidden="true"></i>
@@ -926,7 +922,7 @@ if (isset($_SESSION['login_sales_user'])) {
 								<figure>
 									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
-											<a href="products.html"><img title=" " alt=" " src="images/15.png"></a>
+											<a href="#"><img title=" " alt=" " src="images/15.png"></a>
 											<p>Navaratan-dal</p>
 											<div class="stars">
 												<i class="fa fa-star blue-star" aria-hidden="true"></i>
@@ -973,8 +969,7 @@ if (isset($_SESSION['login_sales_user'])) {
 								<figure>
 									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
-											<a href="products.html"><img src="images/16.png" alt=" "
-													class="img-responsive"></a>
+											<a href="#"><img src="images/16.png" alt=" " class="img-responsive"></a>
 											<p>White-peasmatar</p>
 											<div class="stars">
 												<i class="fa fa-star blue-star" aria-hidden="true"></i>
@@ -1018,7 +1013,7 @@ if (isset($_SESSION['login_sales_user'])) {
 								<figure>
 									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
-											<a href="products.html"><img title=" " alt=" " src="images/17.png"></a>
+											<a href="#"><img title=" " alt=" " src="images/17.png"></a>
 											<p>Channa-dal</p>
 											<div class="stars">
 												<i class="fa fa-star blue-star" aria-hidden="true"></i>
